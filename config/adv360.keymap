@@ -43,6 +43,15 @@
     };
   };
 
+  combos {
+        compatible = "zmk,combos";
+        combo_col {
+            timeout-ms = <50>;
+            key-positions = <62 63>;
+            bindings = <&kp SEMI>;
+        };
+    };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -50,9 +59,9 @@
     default_layer {
             bindings = <
  &kp EQUAL              &kp N1            &kp N2          &kp N3              &kp N4      &kp N5     &mo 3                                                                                                          &mo 3     &kp N6               &kp N7           &kp N8        &kp N9               &kp N0  &kp MINUS
-   &kp TAB               &kp Q             &kp W           &kp F               &kp P       &kp B     &none                                                                                                          &none      &kp J                &kp L            &kp U         &kp Y             &kp SQT   &kp SEMI
-   &kp ESC          &hm LGUI A  &hm LEFT_SHIFT R  &hm LEFT_ALT S  &hm LEFT_CONTROL T       &kp G     &none                      &kp LCTRL     &kp LALT                       &kp LGUI    &kp RCTRL                  &none      &kp M  &hm RIGHT_CONTROL N  &hm RIGHT_ALT E  &hm RSHIFT I           &hm RGUI O    &kp SQT
- &kp LSHFT               &kp Z             &kp X           &kp C               &kp D       &kp V                                              &kp HOME                      &kp PG_UP                                          &kp K                &kp H       &kp COMMA       &kp DOT             &kp FSLH  &kp RSHFT
+   &kp TAB               &kp Q             &kp X           &kp M               &kp W       &kp V     &none                                                                                                          &none      &kp K                &kp F            &kp O         &kp U             &kp SQT   &kp SEMI
+   &kp ESC          &hm LGUI N  &hm LEFT_SHIFT R  &hm LEFT_ALT T  &hm LEFT_CONTROL S       &kp G     &none                      &kp LCTRL     &kp LALT                       &kp LGUI    &kp RCTRL                  &none      &kp Y  &hm RIGHT_CONTROL H  &hm RIGHT_ALT A  &hm RSHIFT E           &hm RGUI I    &kp SQT
+ &kp LSHFT               &kp B             &kp L           &kp D               &kp C       &kp J                                              &kp HOME                      &kp PG_UP                                          &kp Z                &kp P       &kp COMMA       &kp DOT             &kp FSLH  &kp RSHFT
      &mo 2           &kp GRAVE          &kp CAPS        &kp LEFT           &kp RIGHT                               &lt 4 BSPC   &lt 5 DEL   &lt 6  TAB                      &lt 8 ESC  &mt LG(LS(LA(LCTRL))) ENTER  &lt 7 SPACE                                    &kp UP         &kp DOWN      &kp LBKT             &kp RBKT      &mo 2
             >;
         };
